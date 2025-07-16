@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from app.model import auto_clusterer
+from model import auto_clusterer
 
 
 app = Flask(__name__)
