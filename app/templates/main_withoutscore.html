@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Clusterer</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+    <div class="container">
+        <form method="post" class="login-form">
+            <div class="login">
+                <div class="body">
+                    <div class="header">
+                        <legend>Enter data</legend>
+                    </div>
+
+                    <div class="inputs">
+                        <div class="path">
+                            <p class="path">main df path</p>
+                            <input type="text" class="path" name="main_df" value="../data/main_dataset.csv">
+                        </div>
+
+                        <div class="path">
+                            <p class="path">x df path</p>
+                            <input type="text" class="path" name="x_df" value="../data/x_dataset.csv">
+                        </div>
+
+                        <div class="checkbox">
+                            <p div="checkbox">PCA ON<span class="double-dot">:</span></p>
+                            <input type="checkbox" class="checkbox" name="pca">
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="footer">
+                    <input type="submit" value="submit" class="submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

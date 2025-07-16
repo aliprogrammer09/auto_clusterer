@@ -1,0 +1,172 @@
+@import url("../fonts/font.css");
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: code-b;
+}
+
+
+.login {
+    background-color: green;
+    width: 350px;
+    height: 500px;
+    margin-top: 100px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.header {
+    margin-bottom: 30px;
+}
+
+
+legend {
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    /* width: 270px; */
+    padding: 20px 10px;
+}
+
+
+input.checkbox {
+    width: 10px;
+    margin: 0;
+    transform: scale(2);
+    margin-left: 7px;
+    accent-color: orange;
+}
+
+
+@keyframes checkbox {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(2);
+    }
+}
+
+
+input.checkbox:checked {
+    animation: checkbox 0.2s ease-out 1 normal forwards;
+}
+
+
+div.checkbox {
+    display: flex;
+    gap: 10px;
+}
+
+
+div.path {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: right;
+}
+
+
+.submit {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: orange;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: 10px;
+    font-family: code-b;
+}
+
+
+@keyframes submit {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+        color: orange;
+        background-color: black;
+    }
+}
+
+
+.submit:hover {
+    animation: submit 0.3s ease-out 1 normal forwards;
+}
+
+
+input.path {
+    height: 28px;
+    border-radius: 5px;
+    border: 4px;
+    font-size: 12px;
+    font-family: code-b;
+    letter-spacing: 1px;
+    padding: 1px 10px;
+}
+
+
+.double-dot {
+    font-size: 25px;
+    margin-left: 2px;
+}
+
+
+@keyframes input {
+    /* 0% {
+        transform: scale(1);
+    } */
+
+    100% {
+        padding: 5px;
+    }
+}
+
+
+input.path:focus {
+    animation: input 0.1s ease-out 1 normal forwards;
+}
+
+
+div.result {
+    background-color: green;
+    margin-top: 20px;
+    height: 40px;
+    width: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 100px;
+}
+
+
+span.result {
+    color: orange;
+    font-size: 20px;
+}
